@@ -1,0 +1,36 @@
+.hero-container{
+  background-color: #e7826b;
+  color: white;
+  padding: 1.1rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 12px;
+}
+.hero-phone-img{
+    width: 520px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 0 -17px 50px;
+}
+.hero-phone-img img{
+    width: 500px;
+    height: 700px;
+    margin: -30px 0 0px 0px;
+}
+.hero-text{
+    width: 50%;
+    margin: 20px 10px;
+    padding: 3rem;
+}
+.hero-text h1{
+    font-weight: 500; 
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+.hero-text p{
+    font-weight: 300; 
+    line-height:26px;
+    margin: 25px 0;
+}

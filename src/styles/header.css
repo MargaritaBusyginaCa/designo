@@ -1,0 +1,16 @@
+nav{
+    padding: 2.2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 200px;
+}
+.link-el{
+    margin: 0 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333136;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "TIM BROWN",
+        "definition" : "A book cover designed for Tim Brown’s new release, ‘Change’",
+        "img":"graphic-design/desktop/image-change"
+    },
+    {
+        "id": 2,
+        "title": "BOXED WATER",
+        "definition" : "A simple packaging concept made for Boxed Water",
+        "img":"graphic-design/desktop/image-boxed-water"
+    },
+    {
+        "id": 3,
+        "title": "SCIENCE!",
+        "definition" : "A poster made in collaboration with the Federal Art Project",
+        "img":"graphic-design/desktop/image-science"
+    }
+]

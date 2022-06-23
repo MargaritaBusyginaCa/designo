@@ -1,24 +1,54 @@
+.design--container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.design-title-container{
+    margin: 0 auto;
+    background-color: #e7826b;
+    color: white;
+    padding: 1.1rem;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+.design--container h2{
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 1rem;
+    margin: 0;
+}
+.design-title-container p{
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 300;
+    padding: 1rem 0 1rem 0;
+    font-size: 16px;
+}
 .projects{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  justify-content: center;
+  grid-gap: 40px;
+  align-items: center;
+  justify-items: center;
   background-color: #FFFF;
-  padding: 1rem;
+  margin-top: 30px;
 }
-.design--title{
-    text-transform: uppercase;
-    color: #FFFF;
-    text-align: center; 
+.other-projects{
+    padding: 2rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
 }
-.design--title h2{
-    font-weight: 500;  
+.other-projects div{
+    background-color:#e7826b;
+    height: 200px;
+    width: 530px;
 }
-.design--title p{
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 12px;
+.hide{
+    display: none;
 }
+
 .project-el{
     max-width: 300px;
 }

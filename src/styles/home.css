@@ -1,29 +1,47 @@
 .projects--grid{
+   padding: 1rem 0 3rem 0;
    display: grid; 
+   gap: 20px;
    grid-template-areas: "web app"
                         "web graph";
-
 }
-.projects--grid-hide{
-    grid-template-areas: "activeEl activeEl"
-                         "extra other";
-}
-.web-el{
+#web-el{
     grid-area: web;
 }
-
-.app-el{
+.web-el{
+    height: 400px;
+}
+#app-el{
     grid-area: app;
 }
-.graph-el{
+#graph-el{
     grid-area: graph;
 }
-#activeEl{
-    grid-area: activeEl;
+.design--title{
+    text-transform: uppercase;
+    color: #FFFF;
+    text-align: center; 
+    border-radius: 12px;
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
-#extra{
-    grid-area: extra;
+.design--title h2{
+    font-weight: 500; 
+    color: #FFFF;
+    font-size: 30px;
+    margin: 0;
 }
-#other{
-    grid-area: other;
+.design--title p{
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 15px;
 }
+.project-link{
+    text-decoration: none;
+    height: 190px;
+}
+

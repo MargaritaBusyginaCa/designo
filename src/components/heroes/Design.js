@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import "../../styles/heroes-styles/design.css"
 
 function Design({title, projects, showProjects, setShowProjects, setReload, reload}){
 

@@ -1,0 +1,35 @@
+.projects{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+.project-el{
+    max-width: 300px;
+}
+.project-img{
+    margin-bottom: -10px;
+}
+.project-img img{
+    width: 100%;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+.project-info{
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    background-color: rgba(255, 173, 155, 0.222);
+    border-radius: 10px; 
+}
+.project-info h3{
+    margin: 0;
+    padding-top: 1rem;
+    font-weight: 500;
+    color: rgb(234, 132, 109);
+    letter-spacing: 4px;
+}
+.project-info h4{
+    color: rgb(51, 49, 54);
+    font-weight: 400;
+}

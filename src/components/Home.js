@@ -12,20 +12,16 @@ function Home(){
     const [reload, setReload] = useState(false)
     useEffect(() =>{
         if(showWeb){
-            setShowWeb(true)
             setShowGraph(false)
             setShowApp(false)
         }
         if(showApp){
-            setShowApp(true)
             setShowWeb(false)
             setShowGraph(false)
         }
         if(showGraph){
-            setShowGraph(true)
             setShowWeb(false)
-            setShowApp(false)
-            
+            setShowApp(false) 
         }
     }, [reload])
     return(

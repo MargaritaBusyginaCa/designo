@@ -3,6 +3,21 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   justify-content: center;
+  background-color: #FFFF;
+  padding: 1rem;
+}
+.design--title{
+    text-transform: uppercase;
+    color: #FFFF;
+    text-align: center; 
+}
+.design--title h2{
+    font-weight: 500;  
+}
+.design--title p{
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 12px;
 }
 .project-el{
     max-width: 300px;

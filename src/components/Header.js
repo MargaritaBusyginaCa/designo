@@ -4,7 +4,9 @@ import '../styles/header.css'
 function Header(){
     return(
         <nav>
-          <div className="logo"><img src={require('../assets/shared/desktop/logo-dark.png').default}/></div>
+          <div className="logo">
+            <Link to="/"><img src={require('../assets/shared/desktop/logo-dark.png').default}/></Link>
+            </div>
           <div className="links">
             <Link to="/about" className="link-el">our company</Link>
             <Link to="#" className="link-el">locations</Link>

@@ -1,0 +1,29 @@
+.projects--grid{
+   display: grid; 
+   grid-template-areas: "web app"
+                        "web graph";
+
+}
+.projects--grid-hide{
+    grid-template-areas: "activeEl activeEl"
+                         "extra other";
+}
+.web-el{
+    grid-area: web;
+}
+
+.app-el{
+    grid-area: app;
+}
+.graph-el{
+    grid-area: graph;
+}
+#activeEl{
+    grid-area: activeEl;
+}
+#extra{
+    grid-area: extra;
+}
+#other{
+    grid-area: other;
+}

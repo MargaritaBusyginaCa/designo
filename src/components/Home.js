@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Hero from "./heroes/Hero";
 import { Link } from "react-router-dom"
 import "../styles/home.css"
-
+import Quality from "./heroes/Quality";
 
 function Home(){
     const imgBgWeb = require('../assets/home/desktop/image-web-design-large.jpg').default
@@ -46,8 +46,8 @@ function Home(){
             </div>
             </Link>  
            
-           
          </div>
+         <Quality />
         </div>
        
     )

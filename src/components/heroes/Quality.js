@@ -5,7 +5,7 @@ function Quality(){
   const divStyle = {
     backgroundImage: `url(${imgBg})`,
     backgroundRepeat  : 'no-repeat',
-    backgroundPosition: 'left',
+    backgroundPosition: 'center',
   }   
  return(
     <div className="quality-container">

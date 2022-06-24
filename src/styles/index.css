@@ -4,6 +4,7 @@ body{
     width: 100%;
     height: 100vh;
     font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
 }
 .parent-container{
     width: 70%;

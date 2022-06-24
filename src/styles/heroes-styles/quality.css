@@ -1,5 +1,12 @@
 .quality-container{
    display: flex;
    justify-content: center;
-   gap: 20px; 
+   gap: 30px; 
+   text-align: center;
+   padding-top: 3rem;
+}
+.quality-el h2{
+   font-weight: 500;
+   font-size: 17px;
+   letter-spacing: 2px;
 }

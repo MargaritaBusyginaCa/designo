@@ -8,6 +8,7 @@ function Home(){
     const imgBgWeb = require('../assets/home/desktop/image-web-design-large.jpg').default
     const imgBgApp = require('../assets/home/desktop/image-app-design.jpg').default
     const imgBgGraph = require('../assets/home/desktop/image-graphic-design.jpg').default
+    const imgBgSection = require('../assets/shared/desktop/bg-pattern-leaf.svg').default
     
     const styleWeb ={
         backgroundSize: 'cover',
@@ -21,12 +22,17 @@ function Home(){
         background: `linear-gradient(rgba(0, 0, 0, 0.569), rgba(0, 0, 0, 0.339)), url(${imgBgGraph})`,
         backgroundSize: 'cover'
     }
+    const styleSection ={
+        backgroundSize: 'cover',
+        background: `url(${imgBgSection})`
+    }
 
 
     return(
         <div>
          <Hero/>
-         <div className="projects--grid">
+         <div style={styleSection} className="leaf" id="leaf-1"></div>
+         <div className="projects--grid" > 
            <Link to = "/webdesign" className="project-link" id="web-el" >
             <div style={styleWeb} className="design--title web-el">
                 <h2>Web Design</h2>
@@ -45,9 +51,10 @@ function Home(){
               <p>view projects</p>
             </div>
             </Link>  
-           
          </div>
+         <div style={styleSection} className="leaf" id="leaf-2"></div>
          <Quality />
+         
         </div>
        
     )

@@ -44,4 +44,12 @@
     text-decoration: none;
     height: 190px;
 }
+.leaf{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+#leaf-1{margin:-300px;}
+#leaf-2{margin: 90px 0 0 500px;}
 

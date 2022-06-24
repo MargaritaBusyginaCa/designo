@@ -3,7 +3,7 @@ import Hero from "./heroes/Hero";
 import { Link } from "react-router-dom"
 import "../styles/home.css"
 import Quality from "./heroes/Quality";
-
+import ContactHero from "./heroes/ContactHero";
 function Home(){
     const imgBgWeb = require('../assets/home/desktop/image-web-design-large.jpg').default
     const imgBgApp = require('../assets/home/desktop/image-app-design.jpg').default
@@ -54,7 +54,7 @@ function Home(){
          </div>
          <div style={styleSection} className="leaf" id="leaf-2"></div>
          <Quality />
-         
+         <ContactHero/>
         </div>
        
     )

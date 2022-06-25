@@ -1,0 +1,42 @@
+.company-container{
+    background-color: #FDF3F0;
+    display: flex;
+    border-radius: 12px;
+    color:#333136;
+    margin: 2rem 0;
+    gap: 20px;
+}
+.about-us--container{
+    display: flex;
+    background-color: #E7816B;
+    color: #FFFF;
+    border-radius: 12px;
+    gap: 20px;
+}
+.about-us-img{
+    border-radius: 0 12px 12px 0;
+    max-height: 350px;
+}
+.about-us-text{
+    padding: 3rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.about-us-text h1{
+    font-weight: 500;
+}
+.about-us-text p{
+    font-weight: 300; 
+}
+.company-img{
+    max-height: 450px;
+}
+.talent-img{
+    border-radius: 12px 0 0 12px;
+}
+.real-deal-img{
+    border-radius: 0 12px 12px 0; 
+}
+.company-text h1{
+   color: #E7816B;  
+}

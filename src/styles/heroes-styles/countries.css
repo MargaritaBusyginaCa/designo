@@ -1,0 +1,33 @@
+.countries-parent{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+.country-el{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.county-info h1{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.location-link{
+    text-decoration: none;
+}
+.county-info button{
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFF;
+    background-color: #E7816B;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+}

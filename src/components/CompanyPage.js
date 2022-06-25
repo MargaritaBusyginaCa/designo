@@ -3,7 +3,7 @@ import Footer from "./heroes/Footer";
 import "../styles/home.css"
 import "../styles/company.css"
 import ContactHero from "./heroes/ContactHero";
-
+import Countries from "./heroes/Countries";
 function CompanyPage(){
   const divImgDark = require("../assets/about/desktop/bg-pattern-hero-about-desktop.svg").default
   const divImgLight = require("../assets/shared/desktop/bg-pattern-two-circles.svg").default
@@ -47,7 +47,7 @@ function CompanyPage(){
           </div>
         </div>
 
-
+       <Countries/>
        <div className="real-deal company-container">
          <div className="company-text about-us-text" style={divStylLight}> 
             <h1>The real deal</h1>

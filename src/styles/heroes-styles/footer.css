@@ -1,0 +1,25 @@
+.footer-parent{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1;
+    padding-top: 6rem;
+    background-color: #1D1C1E;
+    color: rgb(139, 139, 139);
+}
+.bottom-infobox{
+    width: 87%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.contact-info p{
+   margin: 5px;
+}
+.social-media{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

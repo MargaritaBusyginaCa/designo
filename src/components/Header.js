@@ -1,16 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import '../styles/header.css'
-function Header(){
+import '../styles/index.css'
+import App from "../App";
+function Header({icon}){
+    const linkStyle ={
+     color: icon === "dark" ? "black" : "white",
+    }
+    const divStyle={
+      borderBottom: icon === "dark" ? "" : "1px solid rgb(60, 60, 60)"
+    }
     return(
-        <nav>
+        <nav className="narrow-parent-container" style={divStyle}>
           <div className="logo">
-            <Link to="/"><img src={require('../assets/shared/desktop/logo-dark.png').default}/></Link>
+            <Link to="/"><img src={require(`../assets/shared/desktop/logo-${icon}.png`).default}/></Link>
             </div>
           <div className="links">
-            <Link to="/about" className="link-el">our company</Link>
-            <Link to="#" className="link-el">locations</Link>
-            <Link to="#" className="link-el">contact</Link>
+            <Link to="/about" className="link-el" style={linkStyle}>our company</Link>
+            <Link to="#" className="link-el" style={linkStyle}>locations</Link>
+            <Link to="#" className="link-el" style={linkStyle}>contact</Link>
           </div>  
         </nav>
     )

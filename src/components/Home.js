@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import "../styles/home.css"
 import Quality from "./heroes/Quality";
 import ContactHero from "./heroes/ContactHero";
+import Footer from "./heroes/Footer";
 function Home(){
     const imgBgWeb = require('../assets/home/desktop/image-web-design-large.jpg').default
     const imgBgApp = require('../assets/home/desktop/image-app-design.jpg').default
@@ -29,8 +30,9 @@ function Home(){
 
 
     return(
-        <div>
-         <Hero/>
+      <div className="home-parent">
+       <div className="narrow-parent-container">
+          <Hero/>
          <div style={styleSection} className="leaf" id="leaf-1"></div>
          <div className="projects--grid" > 
            <Link to = "/webdesign" className="project-link" id="web-el" >
@@ -55,7 +57,10 @@ function Home(){
          <div style={styleSection} className="leaf" id="leaf-2"></div>
          <Quality />
          <ContactHero/>
-        </div>
+       </div>
+         
+        <Footer/>
+      </div>
        
     )
 }

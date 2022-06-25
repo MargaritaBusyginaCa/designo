@@ -11,7 +11,7 @@ import Design from "./components/heroes/Design"
 function App(){
     return(
        <div className="parent-container">
-         <Header />
+         <Header icon={"dark"}/>
          <Routes>
             <Route exact path="/" element={<Home />}/>
             <Route path="/about" element={<CompanyPage />}/>

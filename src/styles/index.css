@@ -6,7 +6,7 @@ body{
     font-family: 'Jost', sans-serif;
     overflow-x: hidden;
 }
-.parent-container{
+.narrow-parent-container{
     width: 70%;
     margin: 0 auto;
 }

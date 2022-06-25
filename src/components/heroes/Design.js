@@ -1,8 +1,11 @@
-import React, {useState, useRef, useEffect} from "react"
+import React, {useState, useRef, useEffect, useLayoutEffect} from "react"
 import { Link } from "react-router-dom"
 import "../../styles/heroes-styles/design.css"
 
 function Design({title, projects, subtitle}){
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+})
   const [load, setLoad] = useState(false)
   const refWeb = useRef()
   const refApp = useRef()

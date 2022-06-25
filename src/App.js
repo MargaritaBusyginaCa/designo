@@ -9,6 +9,7 @@ import appData from "./data/appDesignProjects.json"
 import graphData from "./data/grapDesignProjects.json"
 import Design from "./components/heroes/Design"
 function App(){
+   
     return(
        <div className="parent-container">
          <Header icon={"dark"}/>

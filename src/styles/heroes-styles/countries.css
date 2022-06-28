@@ -17,7 +17,7 @@
     margin: 0;
 }
 .location-link{
-    text-decoration: none;
+    text-decoration: none; 
 }
 .county-info button{
     margin-top: 30px;
@@ -30,4 +30,5 @@
     border-radius: 5px;
     font-family: 'Jost', sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
 }

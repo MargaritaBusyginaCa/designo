@@ -1,0 +1,98 @@
+.narrow-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-main{
+    display: flex;
+    background-color: #E7816B;
+    color:#FFFF;
+    border-radius: 15px;
+}
+.contact-text{
+    margin: 6rem 5rem;
+    flex-basis: 70%;
+}
+.contact-text h1{
+    font-weight: 500;
+}
+.contact-text p{
+    width: 80%;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 1rem;
+    margin: 1rem;
+}
+input, textarea{
+    font-family: 'Jost', sans-serif;
+    background-color: #E7816B;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    color: #FFFF;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.356);
+}
+.btn{
+    display: flex;
+    gap: 40px;
+    justify-content: right;
+    padding: .5rem 0;
+}
+.submit-btn{
+    width: 120px;
+    height: 40px;
+    background-color: #FFFF;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.739);
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+.error-hide{
+    display: none;
+}
+.error{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.error img{
+    width: 15px;
+}
+
+.error p{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid #FFFF;
+  -webkit-text-fill-color: #FFFF;
+  -webkit-box-shadow: 0 0 0px 1000px #E7816B inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

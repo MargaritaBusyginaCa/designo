@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom"
 import '../styles/header.css'
 import '../styles/index.css'
-import App from "../App";
 function Header({icon}){
     const linkStyle ={
      color: icon === "dark" ? "black" : "white",
@@ -17,8 +16,8 @@ function Header({icon}){
             </div>
           <div className="links">
             <Link to="/about" className="link-el" style={linkStyle}>our company</Link>
-            <Link to="#" className="link-el" style={linkStyle}>locations</Link>
-            <Link to="#" className="link-el" style={linkStyle}>contact</Link>
+            <Link to="/locations" className="link-el" style={linkStyle}>locations</Link>
+            <Link to="/contact" className="link-el" style={linkStyle}>contact</Link>
           </div>  
         </nav>
     )

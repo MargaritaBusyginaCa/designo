@@ -1,8 +1,12 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useLayoutEffect} from "react";
 import "../styles/contact.css"
 import Countries from "./heroes/Countries";
 import Footer from "./heroes/Footer";
 function Contact(){
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+})
+
   const [nameError, setNameError] = useState("")  
   const [emailError, setEmailError] = useState("")
   const [phoneError, setPhoneError] = useState("")
@@ -22,7 +26,8 @@ function Contact(){
   const divStyle ={
     backgroundImage: `url(${imgBg})`,
     backgroundPosition: 'bottom left',
-    backgroundRepeat  : 'no-repeat'   
+    backgroundRepeat  : 'no-repeat',
+    overflow: "hidden"  
   }
 
 function handleChange(event){

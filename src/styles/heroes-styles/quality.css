@@ -10,3 +10,26 @@
    font-size: 17px;
    letter-spacing: 2px;
 }
+@media (max-width: 1000px) {
+   .quality-container{
+      flex-direction: column;
+   } 
+   .quality-el{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+   .quality-text{
+      text-align: left;
+   }
+}
+@media (max-width: 800px){
+   .quality-el{
+      flex-direction: column;
+      gap: 0;
+   }
+   .quality-text{
+      text-align: center;
+      width: 80%;
+   }
+}

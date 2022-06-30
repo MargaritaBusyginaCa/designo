@@ -27,8 +27,13 @@ body{
     letter-spacing: 1.2px;
     font-family: 'Jost', sans-serif;
 }
-@media (max-width: 1158px){
+
+@media (max-width: 969px){
     .parent-container{
-        width: 90%;
+        width: 100%;
     }
+    .narrow-parent-container{
+        width: 80%;
+    }
+    
 }

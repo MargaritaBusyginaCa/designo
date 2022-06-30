@@ -18,7 +18,7 @@ function ContactHero(){
         <h2>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</h2>
       </div>
       <div className="btn-container">
-        <Link to="/contactform"><button className="general-btn" id="in-touch">get in touch</button></Link>
+        <Link to="/contact"><button className="general-btn" id="in-touch">get in touch</button></Link>
       </div>
     </div>
    )

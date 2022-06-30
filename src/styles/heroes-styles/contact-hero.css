@@ -31,3 +31,11 @@
     font-weight: 600;
     font-size: 12px
 }
+@media (max-width: 1150px) {
+    .btn-container{
+        flex-basis: 45%; 
+    } 
+    .contact--info-box h1{
+        width: 60%;
+    }
+}

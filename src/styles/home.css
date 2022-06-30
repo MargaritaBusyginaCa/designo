@@ -50,6 +50,16 @@
     position: absolute;
     z-index: -1;
 }
-#leaf-1{margin:-300px;}
-#leaf-2{margin: 90px 0 0 500px;}
+/* #leaf-1{margin:-300px;}
+#leaf-2{margin: 90px 0 0 500px;} */
+
+@media (max-width: 900px) {
+    .projects--grid{
+        display: flex;
+        flex-direction: column;
+    } 
+    .web-el{
+        height: unset;
+    }
+}
 

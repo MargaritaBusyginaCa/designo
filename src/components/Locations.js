@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useLayoutEffect} from "react";
 import "../styles/locations.css"
 import Footer from "./heroes/Footer";
 import ContactHero from "./heroes/ContactHero";
 function Locations(){
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+})
  const imgBg = require("../assets/shared/desktop/bg-pattern-two-circles.svg").default
  const divStyle = {
     backgroundImage: `url(${imgBg})`,

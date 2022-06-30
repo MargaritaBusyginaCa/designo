@@ -7,7 +7,7 @@ function Hero(){
   const divStyle = {
     backgroundImage: `url(${imgBg})`,
     backgroundRepeat  : 'no-repeat',
-    backgroundPosition: 'right',
+    backgroundPosition: 'right'
   }
     return(
         <div>

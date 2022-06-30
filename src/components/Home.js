@@ -25,7 +25,9 @@ function Home(){
     }
     const styleSection ={
         backgroundSize: 'cover',
-        background: `url(${imgBgSection})`
+        background: `url(${imgBgSection})`,
+        backgroundSize: "100px 100px",
+        overflow:"clip"
     }
 
 
@@ -33,7 +35,6 @@ function Home(){
       <div className="home-parent">
        <div className="narrow-parent-container">
           <Hero/>
-         <div style={styleSection} className="leaf" id="leaf-1"></div>
          <div className="projects--grid" > 
            <Link to = "/webdesign" className="project-link" id="web-el" >
             <div style={styleWeb} className="design--title web-el">
@@ -54,11 +55,10 @@ function Home(){
             </div>
             </Link>  
          </div>
-         <div style={styleSection} className="leaf" id="leaf-2"></div>
          <Quality />
          <ContactHero/>
        </div>
-         
+    
         <Footer/>
       </div>
        

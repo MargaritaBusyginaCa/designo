@@ -1,6 +1,6 @@
 .design--container{
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 .design-title-container{
     margin: 0 auto;
@@ -38,15 +38,16 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-
 }
 .other-projects div{
     background-color:#e7826b;
     height: 200px;
-    width: 530px;
+    min-width: 400px;
 }
 .hide{
     display: none;
+    width: 0px;
+    height: 0px;
 }
 
 .project-el{
@@ -77,4 +78,65 @@
 .project-info h4{
     color: rgb(51, 49, 54);
     font-weight: 400;
+}
+@media (max-width: 1110px) {
+   .other-projects{
+    flex-direction: column;
+   } 
+   .projects{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 100%;
+    justify-content: center;
+   }
+   .project-img{
+    flex-basis: 50%;
+   }
+   .project-img img{
+     border-radius: 12px 0 0 12px;
+   }
+   .project-el{
+    min-width: 800px;
+    display: flex;
+    width: unset; 
+   }
+  .project-info{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 773px) {
+   .design--container{
+    width: 100%;
+   }
+   .design-title-container{
+    border-radius: 0;
+   }
+
+   .projects{
+    display: unset;
+   }
+   .project-el{
+    width: unset;
+    display: unset;
+   }
+   .project-el div{
+    width: 80%;
+    margin: 0 auto;
+   }
+   .other-projects{
+    display: unset;
+   }
+   .other-projects div{
+    margin: 10px 0;
+   }
+   .project-img img{
+    margin: 40px 0 0 0;
+    border-radius: 12px 12px 0 0;
+   }
+
 }

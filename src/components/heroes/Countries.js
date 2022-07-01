@@ -1,12 +1,25 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom"
 import "../../styles/heroes-styles/countries.css"
 function Countries(){
+ const [matches, setMatches] = useState(
+   window.matchMedia("(max-width: 1109px)").matches
+ ) 
  const divImg = require("../../assets/shared/desktop/bg-pattern-small-circle.svg").default
+ const divMobile = require("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg").default
  const divStyle = {
-  backgroundImage: `url(${divImg})`,
-  backgroundSize: 'cover'   
+  backgroundImage:`url(${divImg})`,
+  backgroundSize: 'cover',
+  backgroundSize: '200px',
+  backgroundPosition: 'center',
+  backgroundRepeat  : 'no-repeat'
  }
+ useEffect(() => {
+  window
+  .matchMedia("(max-width: 1109px)")
+  .addEventListener('change', e => setMatches( e.matches ));
+}, []);
+
  return(
     <div className="countries-parent">
      <div className="country-el">

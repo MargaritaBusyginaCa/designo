@@ -6,7 +6,6 @@
     padding: 1rem;
     border-radius: 12px;
     margin-top: 5rem;
-
 }
 .contact--info-box{
     color: white;
@@ -37,5 +36,24 @@
     } 
     .contact--info-box h1{
         width: 60%;
+    }
+}
+@media (max-width: 752px){
+    .contact-hero-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact--info-box h1{
+        margin: 0 auto;
+        width: 90%;
+        padding: 1rem 0;
+        
+    }
+    .contact--info-box h2{
+        margin:  0 auto;
+        width: 90%;
+    }
+    .btn-container{
+        padding-bottom: 1rem;
     }
 }

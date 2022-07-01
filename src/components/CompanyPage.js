@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import Footer from "./heroes/Footer";
 import "../styles/home.css"
 import "../styles/company.css"
 import ContactHero from "./heroes/ContactHero";
 import Countries from "./heroes/Countries";
 function CompanyPage(){
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 1109px)").matches
+  )
   const divImgDark = require("../assets/about/desktop/bg-pattern-hero-about-desktop.svg").default
   const divImgLight = require("../assets/shared/desktop/bg-pattern-two-circles.svg").default
   const divStyleDark ={
@@ -19,6 +22,12 @@ function CompanyPage(){
     backgroundPosition: 'bottom',
     backgroundSize: '400px'
   }
+  useEffect(() => {
+    window
+    .matchMedia("(max-width: 1109px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
+
   return(
       <div className="about-us--parent">
         <div className="narrow-parent-container">
@@ -30,12 +39,14 @@ function CompanyPage(){
                 We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. 
                 We're always looking forward to creating brands, products, and digital experiences that connect with our clients' audiences.</p>
           </div>
-          <img className="about-us-img" src={require("../assets/about/desktop/image-about-hero.jpg").default}/>
+          { matches ? <img className="about-us-img" src={require("../assets/about/tablet/image-about-hero.jpg").default}/>
+                    : <img className="about-us-img" src={require("../assets/about/desktop/image-about-hero.jpg").default}/>}
          </div>
 
 
         <div className="talent-container company-container" style={divStylLight}>
-          <img className="talent-img company-img" src={require("../assets/about/desktop/image-world-class-talent.jpg").default}/>
+        { matches ? <img className="about-us-img" src={require("../assets/about/tablet/image-world-class-talent.jpg").default}/>
+                    : <img className="about-us-img" src={require("../assets/about/desktop/image-world-class-talent.jpg").default}/>}
           <div className="company-text about-us-text">
             <h1>World-class talent</h1>
             <p>We are a crew of strategists, problem-solvers, and technologists. 
@@ -57,7 +68,8 @@ function CompanyPage(){
             <p>We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
                 we inspire audiences to take action and drive real results.</p>
          </div>
-          <img className="real-deal-img company-img" src={require("../assets/about/desktop/image-real-deal.jpg").default}/>
+         { matches ? <img className="about-us-img" src={require("../assets/about/tablet/image-real-deal.jpg").default}/>
+                    : <img className="about-us-img" src={require("../assets/about/desktop/image-real-deal.jpg").default}/>}
        </div>
        <ContactHero/>
       </div> {/* end of narrow container */}

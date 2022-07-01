@@ -14,4 +14,36 @@ nav{
     font-size: 13px;
     letter-spacing: 1.5px;
 }
+.nav-elements{
+    display: flex;
+    flex-direction: row;
+  }
+
+.hamburger{
+    display: none;
+}
+@media (max-width: 687px) {
+    .hide{
+        display: block;
+    } 
+    .nav-elements{
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index:999;
+        background-color: #E7816B;
+        display: flex;
+    }
+    .link-el{
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    .hamburger{
+        display: block;
+    }
+}
 

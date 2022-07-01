@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React, {useLayoutEffect, useState, useEffect} from "react";
 import "../styles/locations.css"
 import Footer from "./heroes/Footer";
 import ContactHero from "./heroes/ContactHero";
@@ -6,6 +6,15 @@ function Locations(){
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
 })
+const [matches, setMatches] = useState(
+  window.matchMedia("(min-width: 1050px)").matches
+)
+useEffect(() => {
+  window
+  .matchMedia("(min-width: 1050px)")
+  .addEventListener('change', e => setMatches( e.matches ));
+}, []);
+
  const imgBg = require("../assets/shared/desktop/bg-pattern-two-circles.svg").default
  const divStyle = {
     backgroundImage: `url(${imgBg})`,
@@ -33,11 +42,13 @@ function Locations(){
         </div>
        </div>
        <div className="location-map" id="canada-map">
-        <img src={require("../assets/locations/desktop/image-map-canada.png").default}/>
+        {matches ? <img src={require("../assets/locations/desktop/image-map-canada.png").default}/>
+                  : <img src={require("../assets/locations/tablet/image-map-canada.png").default}/>}
        </div>
 
        <div className="location-map" id="australia-map">
-        <img src={require("../assets/locations/desktop/image-map-australia.png").default}/>
+       {matches ? <img src={require("../assets/locations/desktop/image-map-australia.png").default}/>
+                  : <img src={require("../assets/locations/tablet/image-map-australia.png").default}/>}
        </div>
        <div id="australia" className="location-el" style={divStyle}>
          <h1>Australia</h1>
@@ -72,7 +83,8 @@ function Locations(){
          </div>
        </div>
        <div className="location-map" id="uk-map">
-        <img src={require("../assets/locations/desktop/image-map-united-kingdom.png").default}/>
+       {matches ? <img src={require("../assets/locations/desktop/image-map-united-kingdom.png").default}/>
+                  : <img src={require("../assets/locations/tablet/image-map-uk.png").default}/>}
        </div>
 
      </div> {/**end of grid container */}

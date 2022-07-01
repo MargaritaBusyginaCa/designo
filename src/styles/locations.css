@@ -1,3 +1,8 @@
+.locations-parent{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 .narrow-container{
     width: 80%;
     margin: 0 auto;
@@ -54,4 +59,33 @@
 }
 .location-infobox p{
     margin: 5px;
+}
+@media (max-width: 1050px){
+    .narrow-container{
+        width: 90%;
+    }
+    .locations-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .location-el{
+        width: 95%;
+    }
+    .location-map img{
+        width: 95%;
+        height: 300px;
+    }
+    .location-infobox{
+        margin: 10px 0 40px 30px;
+    }
+    .location-el h1{
+        margin: 30px 0 0 30px;
+    }
+    #canada-map{
+        margin-bottom: 4rem;
+    }
+    #australia{
+        margin-bottom: 4rem; 
+    }
 }

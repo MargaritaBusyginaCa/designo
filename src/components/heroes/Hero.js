@@ -18,9 +18,7 @@ function Hero(){
             <p>With over 10 years in the industry, we are experienced in 
                 creating fully responsive websites, app design, and engaging 
                 brand experiences. Find out more about our services.</p>
-            <button className="general-btn">
-                <Link to="/about" className="btn-link">learn more</Link>
-            </button>
+                <Link to="/about" className="general-btn btn-link">learn more</Link>
           </div>
           <div className="hero-phone-img">
             <img src={require("../../assets/home/desktop/image-hero-phone.png").default}/>

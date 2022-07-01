@@ -28,7 +28,12 @@
 #in-touch{
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 12px
+    font-size: 12px;
+    text-decoration: none;
+}
+.general-btn:hover{
+    background-color: #FFAD9B;
+    color: #FFFF;
 }
 @media (max-width: 1150px) {
     .btn-container{

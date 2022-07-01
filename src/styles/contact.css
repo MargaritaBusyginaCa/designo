@@ -55,6 +55,10 @@ input, textarea{
     font-size: 12px;
     cursor: pointer;
 }
+.submit-btn:hover{
+    background-color: #FFAD9B;
+    color: #FFFF;
+}
 ::placeholder{
     color: rgba(255, 255, 255, 0.739);
 }

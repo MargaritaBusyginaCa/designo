@@ -19,6 +19,10 @@
 .location-link{
     text-decoration: none; 
 }
+.county-info button:hover{
+    background-color: #FFAD9B;
+    color: #FFFF;
+}
 .county-info button{
     margin-top: 30px;
     padding: 12px 20px;

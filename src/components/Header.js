@@ -7,7 +7,7 @@ function Header({icon}){
     let styleName = showMenu ? "nav-elements" : "hide"
     const linkStyle ={
      color: icon ===  "dark" ? "black" : "white",
-     color: showMenu ? "white" : "black"
+     color: showMenu ? "white" : "grey"
     }
     const divStyle={
       borderBottom: icon === "dark" ? "" : "1px solid rgb(60, 60, 60)"

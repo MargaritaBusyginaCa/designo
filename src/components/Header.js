@@ -32,9 +32,9 @@ function Header({icon}){
               <img src={require("../assets/shared/mobile/icon-hamburger.svg").default}/>
             </div>
             <div className={styleName}>
-            <Link to="/about" className="link-el" style={linkStyle}>our company</Link>
-            <Link to="/locations" className="link-el" style={linkStyle}>locations</Link>
-            <Link to="/contact" className="link-el" style={linkStyle}>contact</Link>
+            <Link to="/about" className="link-el" style={linkStyle} onClick={()=>setShowMenu(!showMenu)}>our company</Link>
+            <Link to="/locations" className="link-el" style={linkStyle} onClick={()=>setShowMenu(!showMenu)}>locations</Link>
+            <Link to="/contact" className="link-el" style={linkStyle} onClick={()=>setShowMenu(!showMenu)}>contact</Link>
             </div>
           </div>
           :
